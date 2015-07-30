@@ -1,7 +1,7 @@
 function FindProxyForURL(url, host) {
 	var PROXY = 'PROXY hx.gy:1080';
 
-	if (shExpMatch(host,'android.com')) return PROXY;
+	if (host == 'android.com') return PROXY;
     if (shExpMatch(host,'s3.amazonaws.com')) return PROXY;
     if (shExpMatch(host,'bitbucket.org')) return PROXY;
     if (shExpMatch(host,'bintray.com')) return PROXY;
